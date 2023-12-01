@@ -1,0 +1,116 @@
+/* Navbar.css */
+.navbar {
+    background-color: white;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-height: 40px;
+    margin: 5px;
+  }
+  
+  .nav-item {
+    text-decoration: none;
+    color: #333;
+    padding: 0 25px;
+    margin: 0 10px;
+    font-weight: bold;
+  }
+  
+  .nav-item:hover {
+    color: #000;
+    text-decoration: underline;
+  }
+
+  .navbar-icons img {
+    margin-right: 10px; /* 如果需要，在图标之间添加一些间距 */
+    padding-left: 7px;
+    border-radius: 50%; /* 圆形图片 */
+    width: 8%; /* 根据需要调整大小 */
+    height: 8%; /* 保持宽高一致以形成圆形 */
+  }
+  
+  .navbar-icons img:first-child {
+    margin-left: 15px; /* 最后一个按钮没有右边距 */
+  }
+
+  .navbar-links {
+    display: flex;
+    align-items: center;
+  }
+
+  .login-button {
+    padding: 10px 20px; /* 按钮内边距 */
+    border: 3px solid #5c5c8a; /* 按钮边框颜色和宽度 */
+    background-color: transparent; /* 透明背景 */
+    color: #5c5c8a; /* 按钮文字颜色 */
+    font-weight: bold; /* 文字加粗 */
+    border-radius: 20px; /* 圆角边框 */
+    outline: none; /* 移除焦点时的轮廓 */
+    cursor: pointer; /* 鼠标悬停时的指针样式 */
+    text-transform: uppercase; /* 文字大写 */
+    transition: all 0.3s ease; /* 过渡效果 */
+    margin-right: 15px;
+    white-space: nowrap;
+  }
+  
+  /* 鼠标悬停在按钮上时的样式 */
+  .login-button:hover {
+    background-color: #5c5c8a; /* 鼠标悬停时的背景颜色 */
+    color: white; /* 鼠标悬停时的文字颜色 */
+  }
+
+  /* 添加媒体查询以适应小屏幕尺寸 */
+@media (max-width: 768px) {
+  .login-button {
+    padding: 8px 16px; /* 在小屏幕上减少内边距 */
+    font-size: 0.8rem; /* 在小屏幕上减小字体大小 */
+  }
+}
+
+.dropdown {
+ 
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown-menu {
+    text-decoration: none;
+    color: #333;
+    padding: 0 25px;
+    margin: 0 10px;
+    font-weight: bold;
+    background-color: white;
+    cursor: pointer;
+    font-size: 1em;
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-item {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    padding: 0 0;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.dropdown-item:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+
+.dropdown-menu:hover .dropdown-content {
+  display: block;
+}

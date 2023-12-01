@@ -1,0 +1,98 @@
+.welcome-banner {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 500px; /* 您可以根据需要调整这个高度 */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10vh;
+    margin: 0 6vh;
+    width: calc(100% - 12vh);
+    color: white; /* 或者任何适合您设计的文字颜色 */
+    box-sizing: border-box;
+    border-radius: 3%;
+  }
+  
+  .welcome-text h1 {
+    font-size: 5em; 
+    margin: 0;
+    color: white;
+  }
+  
+  .welcome-text h2 {
+    font-size: 5em; 
+    margin-top: 5vh;
+    color: white;
+  }
+  
+  .profile-image-container {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 30vh; /* 头像大小 */
+    height: 30vh; /* 保证与宽度一样以形成圆形 */
+    margin-right: 6vh;
+  }
+  
+  .profile-image {
+    width: 100%;
+    height: 100%;
+    
+  }
+
+  
+.recom-content {
+  display: flex;          /* 使用 Flexbox */
+  justify-content: center; /* 水平居中 */
+  align-items: center;     /* 垂直居中 */
+  height: auto;         
+  width: 100%; 
+  background-size: cover;
+  margin: 0 20px;
+  box-sizing: border-box; 
+  padding: 0 20px;
+}
+
+.recom-img {
+  object-fit: cover;
+  cursor: pointer;
+  width: calc(33.333% - 50px);
+  height: auto;
+  margin: 10px;
+  
+}
+
+.recom-img:hover {
+  transform: translateY(-5px);
+}
+
+.checklist {
+  margin: 20px 50px;
+}
+
+.progress-bar {
+  background-color: #eee;
+  border-radius: 4px;
+  width: 100%;
+  height: 20px;
+}
+
+.progress {
+  background-color: #d9534f;
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+.checklist-item {
+  cursor: pointer;
+  padding: 20px 10px;
+  border-bottom: 1px solid #eee;
+  color: #d9534f;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.checklist-item.complete {
+  text-decoration: line-through;
+}

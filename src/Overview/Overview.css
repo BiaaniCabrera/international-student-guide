@@ -1,0 +1,175 @@
+.forum-content {
+    display: flex;          /* 使用 Flexbox */
+    justify-content: center; /* 水平居中 */
+    align-items: center;     /* 垂直居中 */
+    height: auto;           /* 设置容器的高度 */
+    width: calc(100% - 40px); /* 调整宽度以包含padding和margin */
+    background-size: cover;
+    margin: 0 20px;
+    padding: 0 20px;
+    box-sizing: border-box; /* 确保padding被包含在宽度内 */
+}
+
+.forum-content img {
+    max-width: 100%;        /* 使图片不超过容器宽度 */
+    max-height: 50%;       /* 使图片不超过容器高度 */
+}
+
+
+.story-content {
+    display: flex;          /* 使用 Flexbox */
+    justify-content: center; /* 水平居中 */
+    align-items: center;     /* 垂直居中 */
+    height: auto;           /* 设置容器的高度 */
+    width: calc(100% - 40px); /* 调整宽度以包含padding和margin */
+    background-size: cover;
+    margin: 0 20px;
+    box-sizing: border-box; /* 确保padding被包含在宽度内 */
+    padding: 0 20px;
+}
+
+.story-content img {
+    max-width: 100%;        /* 使图片不超过容器宽度 */
+    max-height: 50%;       /* 使图片不超过容器高度 */
+    object-fit: cover;
+    cursor: pointer;
+}
+
+
+
+.foodtips-content {
+    display: flex;          /* 使用 Flexbox */
+    justify-content: center; /* 水平居中 */
+    align-items: center;     /* 垂直居中 */
+    height: auto;         
+    width: calc(100% - 60px); 
+    background-size: cover;
+    margin: 0 20px;
+    box-sizing: border-box; 
+    padding: 0 40px;
+}
+
+.sidebyside {
+    object-fit: cover;
+    cursor: pointer;
+    width: 50%; /* 每张图片占据容器宽度的一半 */
+    height: auto;
+    padding: 30px 20px;
+    
+}
+
+.forum-title {
+    font-size: 5em; /* 城市名称的字体大小 */
+    margin: 40px;
+    font-weight: bold;
+}
+
+.recom-content {
+    display: flex;          /* 使用 Flexbox */
+    justify-content: center; /* 水平居中 */
+    align-items: center;     /* 垂直居中 */
+    height: auto;         
+    width: 100%; 
+    background-size: cover;
+    margin: 0 20px;
+    box-sizing: border-box; 
+    padding: 0 20px;
+}
+
+.recom-img {
+    object-fit: cover;
+    cursor: pointer;
+    width: calc(33.333% - 50px);
+    height: auto;
+    margin: 10px;
+    
+}
+
+.recom-img:hover {
+    transform: translateY(-5px);
+  }
+
+.story-share {
+    background-color: #000000; /* Black background */
+    
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    text-align: left; /* Centered text */
+    max-width: 85%; /* Maximum width of the container */
+    max-height: auto;
+    margin: auto; /* Center the container */
+    margin-bottom: 50px;
+  }
+
+  .story-text1 {
+    color: #fff; /* White text */
+    font-weight: bold;
+    font-size: 4em;
+    margin: 20px 20px;
+  }
+  .story-text2 {
+    color: #fff; /* White text */
+    font-weight: bold;
+    font-size: 1.5em;
+    margin: 40px 20px;
+  }
+  
+  .share-story-button {
+    background-color: transparent; /* Transparent button background */
+    color: #fff; /* White button text */
+    border: 4px solid #fff; /* White border */
+    padding: 10px 20px;
+    font-size: 1.5rem; /* Larger font size */
+    font-weight: bold;
+    cursor: pointer; /* Pointer cursor on hover */
+    margin: 20px; /* Space above the button */
+    border-radius: 3px; /* Slightly rounded corners for the button */
+  }
+  
+  .share-story-button:hover {
+    background-color: #fff; /* White background on hover */
+    color: #000; /* Black text on hover */
+  }
+
+/* 分区标题样式 */
+section h2 {
+    margin: 15px 20px;
+    padding-left: 20px;
+    font-size: 2.5em;
+    color: #333;
+  }
+  
+  /* 分区样式 
+  section {
+    margin-bottom: 40px;
+  }*/
+  .image-text-container {
+    display: flex;
+    justify-content: space-around; /* Adjust as needed for your layout */
+    margin: 20px 45px;
+  }
+  
+  .image-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* This will center-align the text below the image */
+    width: 350px; /* Or whatever width you want */
+  }
+  
+  .image {
+    width: 110%;
+    border-radius: 10px; /* For rounded corners as shown in the image */
+  }
+  
+  .image:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+  }
+  
+  .text {
+    margin-top: 5px; /* Or however much space you want between image and text */
+    text-align: center;
+    font-weight: bold;
+    color: #CC3A45; /* Adjust the color to match your design */
+    font-size: 1.5em;
+  }

@@ -1,0 +1,112 @@
+/* Login.css */
+.login-wrapper {
+  display: flex;
+  height: 100vh; /* 假设您希望登录界面占满整个视口高度 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 给登录框添加一些阴影 */
+  border-radius: 20px; /* 根据您的设计，可能需要调整 */
+  padding: 30px;
+}
+
+.login-sidebar {
+  background-image: url('./assets/sidebar.png');
+  background-repeat: no-repeat; /* 防止图像重复 */
+  background-position: center center; /* 图片居中 */
+  background-size: cover; /* 图片覆盖整个容器 */
+  padding: 20px;
+  width: 40%; /* 侧边栏宽度，根据需要调整 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 给登录框添加一些阴影 */
+}
+
+.login-container {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: white; /* 背景颜色，您可以根据设计调整 */
+  }
+  
+  .login-content {
+    max-width: 500px; /* 登录区域的最大宽度 */
+    background: white;
+    padding: 20px;
+    
+  }
+  
+  .login-content h1 {
+    color: #333; /* 标题颜色 */
+    font-size: 3.5em;
+    margin: 0.5em 0;
+    white-space: nowrap;
+  }
+  
+  .login-content p {
+    color: #666; /* 描述文字颜色 */
+    margin-bottom: 2em;
+  }
+  
+  .login-content form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input[type='email'],
+  input[type='password'] {
+    padding: 10px;
+    margin-bottom: 1em;
+    border: 1px solid #ddd; /* 输入框边框颜色 */
+    border-radius: 4px; /* 输入框圆角 */
+    font-size: 1rem; /* 输入框文字大小 */
+  }
+  
+  .form-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1em;
+  }
+  
+  .form-footer .login-button {
+    background-color: #007bff; /* 按钮背景颜色 */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-transform: uppercase; /* 文字大写 */
+    border-radius: 4px;
+    cursor: pointer; /* 鼠标样式 */
+  }
+  
+  .form-footer .login-button:hover {
+    background-color: #0056b3; /* 鼠标悬停时的按钮背景颜色 */
+  }
+  
+  .signup-link {
+    text-align: center;
+    color: #333;
+    cursor: pointer;
+    margin-top: 15px;
+  }
+  
+  .signup-link span {
+    color: #007bff;
+    text-decoration: underline;
+  }
+  
+  /* 添加一些响应式设计的样式 */
+  @media (max-width: 768px) {
+    .login-content {
+      margin: 20px;
+      box-shadow: none;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  
+  .error-message {
+    color: red;
+    margin-top: 5px;
+    font-size: 0.8em;
+  }

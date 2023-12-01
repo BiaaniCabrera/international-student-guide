@@ -1,0 +1,295 @@
+
+  
+  /* 应用程序样式 */
+  .App {
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+    
+    
+  }
+  
+  /* 头部样式 */
+  .home-wrapper {
+    background-color: #CC3A45;
+    color: white;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between; /* 水平间距平均分布 */
+    align-items: center; /* 垂直居中 */
+    height: 650px;
+    margin: 0 5px 0 20px;
+    width: calc(100% - 40px); /* 调整宽度以包含padding和margin */
+    box-sizing: border-box; /* 确保padding被包含在宽度内 */
+  }
+  
+  .home-sidebar {
+    width: 60%;
+  }
+
+  .text-container {
+    width: 80%; /* 调整为合适的宽度 */
+    
+  }
+  
+  .text-container h1 {
+    font-size: 56px; /* 根据设计调整 */
+    margin-bottom: 15px; /* 适当的间距 */
+    margin-top: 50px;
+  }
+  
+  .text-container p {
+    margin-bottom: 16px; /* 适当的间距 */
+  }
+  
+  .buttons-container button {
+    width: 180px; /* 设置固定宽度 */
+    height: 50px; /* 设置固定高度 */
+    border: 2px solid #fff; /* 边框设置为白色 */
+    background-color: transparent; /* 透明背景 */
+    color: #fff; /* 文本颜色为白色 */
+    text-align: center; /* 文本居中 */
+    line-height: 36px; /* 线条高度与按钮高度减去边框宽度相同 */
+    border-radius: 5px; /* 轻微的圆角 */
+    cursor: pointer; /* 鼠标悬停时指针样式 */
+    font-size: 22px; /* 文本大小 */
+    padding: 0; /* 移除内边距 */
+    display: inline-block; /* 或者可以使用flex, grid等布局 */
+    margin: 10px 20px; /* 与其他按钮的间距 */
+    box-sizing: border-box; /* 确保宽度和高度包含了边框 */
+    font-weight: bold;
+  }
+
+  .buttons-container button:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  .buttons-container button:last-child {
+    margin-right: 0; /* 最后一个按钮没有右边距 */
+  }
+  
+  /* .images-container {
+    display: flex;
+    justify-content: flex-end; 使图标靠右对齐 
+    margin-left: auto;
+  } */
+
+  .images-container {
+    width: 40%;
+    position: relative;
+    height: 200px; /* 容器的高度，根据需要调整 */
+    width: 200px; /* 容器的宽度，根据需要调整 */
+  }
+  
+  .images-container img {
+    position: absolute;
+    border-radius: 50%; /* 圆形图片 */
+    margin-left: 10px; /* 图片之间的间距 */
+    width: 220px; /* 根据需要调整大小 */
+    height: 220px; /* 保持宽高一致以形成圆形 */
+  }
+  
+  .icon {
+    position: absolute;
+    width: 60px; /* 根据实际情况调整图标大小 */
+    height: 60px; /* 根据实际情况调整图标大小 */
+  }
+  
+  .top-icon {
+    top: -50%;
+    left: -135%;
+    transform: translateX(-50%);
+  }
+  
+  .bottom-left-icon {
+    bottom: 10%;
+    left: -220%;
+  }
+  
+  .bottom-right-icon {
+    bottom: 10%;
+    left: -80%;
+  }
+  
+  /* 分类样式 */
+  .categories {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 创建四列 */
+    justify-content: center; /* 居中网格容器 */
+    justify-items: center; /* 居中网格项 */
+    gap: 15px; /* 设置图标之间的间隙 */
+    /* 根据需要，这里可以添加容器的最大宽度限制 */
+    width: 1000px; /* 可以调整这个值以适应您的设计 */
+    margin: 0 auto; /* 上下保持0，左右自动（这会居中整个网格容器） */
+  }
+  
+  .category {
+    /* 移除width属性，允许网格自动调整 */
+    /* margin: 10px; 如果需要间隔，可以使用网格的gap属性 */
+    padding: 0;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    cursor: pointer;
+    overflow: hidden;
+    width: 300px;
+    margin: 10px;
+    
+  }
+  
+  /* 其他样式保持不变 */
+  
+  
+  .category:hover {
+    transform: translateY(-5px);
+  }
+  
+  .category .icon {
+    width: 100px; /* 新的宽度 */
+    height: auto; /* 保持高宽比 */
+    display: block; /* 确保没有额外的空间 */
+    margin: 0 auto; /* 居中图标 */
+  }
+  
+  /* 温度显示样式 */
+  .current-temperature {
+    display: flex;
+    justify-content: space-between; /* 使用space-between来分隔子项 */
+    align-items: center; /* 垂直居中对齐子项 */
+    background-image: url('./assets/tembkg.png');
+    background-repeat: no-repeat; /* 防止图像重复 */
+    background-position: center center; /* 图片居中 */
+    background-size: cover; /* 图片覆盖整个容器 */
+    /* 确保容器有足够的高度 */
+    height: 300px; /* 或者根据你的需要设置高度 */
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: calc(100% - 40px); /* 调整宽度以包含padding和margin */
+    box-sizing: border-box; /* 确保padding被包含在宽度内 */
+    margin: 0 5px 0 20px;
+  }
+  
+  .temperature-info {
+    margin: 50px;
+    padding-bottom: 10px;
+    font-size: 3em;
+    padding: 20px;
+  }
+  
+  .city-name {
+    font-size: 1.5em; /* 城市名称的字体大小 */
+    margin: 20px;
+  }
+  
+  .temperature-value {
+    font-size: 10em; /* 温度值的字体大小 */
+    margin: 100px;
+  }
+
+  .degree-symbol {
+    font-size: 35%; /* 例如，设置字体大小为75% */
+    vertical-align: super; /* 设置为上标 */
+  }
+  
+  /* 季节选择样式 */
+  .seasons {
+    padding: 20px;
+  }
+
+  .seasons-text {
+    font-size: 1.5em;
+    padding: 10px;
+    font-weight: bold;
+
+  }
+  
+  .seasons-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 创建四列 */
+    justify-content: center; /* 居中网格容器 */
+    justify-items: center; /* 居中网格项 */
+    gap: 10px; /* 设置图标之间的间隙 */
+    /* 根据需要，这里可以添加容器的最大宽度限制 */
+    width: 1000px; /* 可以调整这个值以适应您的设计 */
+    margin: 0 auto; /* 上下保持0，左右自动（这会居中整个网格容器） */
+  }
+
+  .season img {
+    max-width: 100%; /* 最大宽度为容器宽度 */
+    max-height: 100%; /* 最大高度为容器高度 */
+    object-fit: cover; /* 覆盖整个容器 */
+
+  }
+  
+  .season {
+    margin: 0 18px;
+    padding: 13px;
+    background-color:transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 250px;
+  }
+  
+  .season.active {
+    background-color: #ff4e50;
+    color: white;
+  }
+  
+  .season .icon {
+    width: 100%; /* 使图像填满容器的宽度 */
+    height: auto; /* 高度自适应以保持宽高比 */
+    display: block; /* 防止底部出现空白 */
+    border-radius: 10px; /* 如果您想要图像的边角也是圆的 */
+
+  }
+
+  .season-name{
+    font-weight: bold;
+    padding: 30px;
+    font-size: 1.5em;
+    margin: 30px;
+  }
+  
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .categories, .seasons-container {
+      flex-direction: column;
+    }
+  
+    .category, .season {
+      width: auto;
+      margin: 10px auto;
+    }
+    .header-container {
+      flex-direction: column; /* 在小屏幕上堆叠元素 */
+    }
+  
+    .text-buttons-container {
+      max-width: 100%; /* 在小屏幕上占满整个宽度 */
+    }
+  
+    .icons-container {
+      margin-left: 0; /* 在小屏幕上移除左边距 */
+      justify-content: center; /* 小屏幕上图标居中显示 */
+    }
+  }
+
+  .category-icon {
+    width: 100%; /* 使图像填满容器的宽度 */
+    height: auto; /* 高度自适应以保持宽高比 */
+    display: block; /* 防止底部出现空白 */
+    border-radius: 10px; /* 如果您想要图像的边角也是圆的 */
+  }
+
+  .season-icon {
+    width: 100%; /* 使图像填满容器的宽度 */
+    height: auto; /* 高度自适应以保持宽高比 */
+    display: block; /* 防止底部出现空白 */
+    border-radius: 10px; /* 如果您想要图像的边角也是圆的 */
+  }
+
+ 
