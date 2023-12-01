@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.cc01a2c1.css",
-    "main.js": "/static/js/main.ac959e9b.js",
+    "main.css": "/static/css/main.868f466a.css",
+    "main.js": "/static/js/main.e4dbcaa0.js",
     "static/js/787.fb327819.chunk.js": "/static/js/787.fb327819.chunk.js",
     "static/media/overviewbkg.png": "/static/media/overviewbkg.a435a7f5741ee7f2c285.png",
     "static/media/forumbkg.png": "/static/media/forumbkg.c34b3a3325648723b37b.png",
@@ -28,8 +28,10 @@
     "static/media/icon2.png": "/static/media/icon2.45d11b245c73fb508843.png",
     "static/media/autumnbkg.jpg": "/static/media/autumnbkg.fc37d87511bd27b1c42e.jpg",
     "static/media/tipsbakg.png": "/static/media/tipsbakg.1a6c35b895ba6a9c57d2.png",
+    "static/media/unnamed (22).png": "/static/media/unnamed (22).cdee22ad78f9e07f9112.png",
     "static/media/tipsbkg.png": "/static/media/tipsbkg.fb40c936661b9f77c595.png",
     "static/media/icon.jpg": "/static/media/icon.2a244fa3feb040df9827.jpg",
+    "static/media/homebkg.png": "/static/media/homebkg.fffeac570c2542c610a4.png",
     "static/media/p-icon.png": "/static/media/p-icon.e1b24c54b6b5bf0729e2.png",
     "static/media/cl-icon.png": "/static/media/cl-icon.0156a583f46328ae89e4.png",
     "static/media/f-icon.png": "/static/media/f-icon.5ff75e83001dbee081f3.png",
@@ -38,6 +40,7 @@
     "static/media/h-icon.png": "/static/media/h-icon.9c1a72ecf4402ebc7fd3.png",
     "static/media/t-icon.png": "/static/media/t-icon.4ba3152ba27119816dc9.png",
     "static/media/c-icon.png": "/static/media/c-icon.f1980e30bfed8415c11a.png",
+    "static/media/icon-forum.png": "/static/media/icon-forum.192aa3a868adb7a4f7e9.png",
     "static/media/kalleprofile.png": "/static/media/kalleprofile.27e9b90c6e05a518e395.png",
     "static/media/samprofile.png": "/static/media/samprofile.68a024b391427af60435.png",
     "static/media/mikkaprofile.png": "/static/media/mikkaprofile.d4799b0fc3b6ce7c2c67.png",
@@ -51,12 +54,12 @@
     "static/media/spring.png": "/static/media/spring.ba5b0594bfd772a74844.png",
     "static/media/autumn.png": "/static/media/autumn.4a0676aafa8a9a97172b.png",
     "index.html": "/index.html",
-    "main.cc01a2c1.css.map": "/static/css/main.cc01a2c1.css.map",
-    "main.ac959e9b.js.map": "/static/js/main.ac959e9b.js.map",
+    "main.868f466a.css.map": "/static/css/main.868f466a.css.map",
+    "main.e4dbcaa0.js.map": "/static/js/main.e4dbcaa0.js.map",
     "787.fb327819.chunk.js.map": "/static/js/787.fb327819.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cc01a2c1.css",
-    "static/js/main.ac959e9b.js"
+    "static/css/main.868f466a.css",
+    "static/js/main.e4dbcaa0.js"
   ]
 }
