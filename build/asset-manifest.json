@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/international-student-guide/static/css/main.664fe96f.css",
-    "main.js": "/international-student-guide/static/js/main.0ece027f.js",
+    "main.js": "/international-student-guide/static/js/main.eef47e73.js",
     "static/js/787.fb327819.chunk.js": "/international-student-guide/static/js/787.fb327819.chunk.js",
     "static/media/overviewbkg.png": "/international-student-guide/static/media/overviewbkg.a435a7f5741ee7f2c285.png",
     "static/media/forumbkg.png": "/international-student-guide/static/media/forumbkg.c34b3a3325648723b37b.png",
@@ -55,11 +55,11 @@
     "static/media/autumn.png": "/international-student-guide/static/media/autumn.4a0676aafa8a9a97172b.png",
     "index.html": "/international-student-guide/index.html",
     "main.664fe96f.css.map": "/international-student-guide/static/css/main.664fe96f.css.map",
-    "main.0ece027f.js.map": "/international-student-guide/static/js/main.0ece027f.js.map",
+    "main.eef47e73.js.map": "/international-student-guide/static/js/main.eef47e73.js.map",
     "787.fb327819.chunk.js.map": "/international-student-guide/static/js/787.fb327819.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.664fe96f.css",
-    "static/js/main.0ece027f.js"
+    "static/js/main.eef47e73.js"
   ]
 }
