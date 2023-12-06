@@ -15,7 +15,7 @@ function Register() {
 
     try {
       // Replace with your actual backend registration endpoint URL
-      const response = await axios.post("http://localhost:3001/register", {
+      const response = await axios.post("/register", {
         email: email, // Assuming your backend expects 'email'
         username: username, // Add username to the request
         password: password
